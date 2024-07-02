@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1, h2 {
+    color: #9fc5e8;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #27496d;
+}
+
+.calculator {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #27496d;
+    border-radius: 8px;
+}
+
+.casa {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #9fc5e8;
+}
+
+.odds, .stake {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5c8dbc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #457aa1;
+}
+
+.profit, .profit-percentage {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.partial-profit {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #e1f2fb;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+}

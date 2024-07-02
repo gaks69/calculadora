@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Arbitragem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zizou Bergs - Arthur Cazaux</h1>
+        <h2>Tênis / Wimbledon</h2>
+        <div class="calculator">
+            <div class="row">
+                <div class="casa">Banca Total</div>
+                <div class="stake"><input type="number" id="total_bank" placeholder="Banca Total" value="635.00" oninput="updateStakes()"></div>
+            </div>
+            <div class="row">
+                <div class="casa">Casa de Aposta 1</div>
+                <div class="odds"><h3>Odd</h3><input type="number" id="casa1_odds" placeholder="Odds" value="2.2" oninput="calculateProfit()"></div>
+                <div class="stake"><h3>Quantidade a ser apostada</h3><input type="number" id="casa1_stake" placeholder="Stake" value="292.00" oninput="calculateProfit()"></div>
+                <div class="partial-profit" id="casa1_profit">Lucro Parcial: 0.00 BRL</div>
+            </div>
+            <div class="row">
+                <div class="casa">Casa de Aposta 2</div>
+                <div class="odds"><h3>Odd</h3><input type="number" id="casa2_odds" placeholder="Odds" value="1.87" oninput="calculateProfit()"></div>
+                <div class="stake"><h3>Quantidade a ser apostada</h3><input type="number" id="casa2_stake" placeholder="Stake" value="343.00" oninput="calculateProfit()"></div>
+                <div class="partial-profit" id="casa2_profit">Lucro Parcial: 0.00 BRL</div>
+            </div>
+            <div class="result">
+                <div class="profit" id="profit">Lucro: 0.00 BRL</div>
+                <div class="profit-percentage" id="profit_percentage">Lucro Percentual: 0.00%</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
